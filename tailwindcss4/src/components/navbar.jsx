@@ -41,7 +41,7 @@ const Navbar = () => {
         }  
          
   return (
-    <nav className='bg-black text-white fixed top-0 left-0 right-0 border-b border-white/10'>
+    <nav className='bg-black text-white fixed top-0 left-0 right-0 border-b border-white/10 z-50'>
         <div className='container mx-auto px-4 py-2 sm:px-6 lg:px-8'>
             <div className='flex items-center justify-between h-16'>
                 {/* logo */}
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <div className='hidden lg:flex items-center space-x-4'>
                     {
                         Object.keys(menuItems).map((key) => (
-                            <div className='relative'>
+                            <div className='relative' key={key}>
                                 <button onClick={() => toggleDropdown(key)} className='hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium flex items-center'>
                                     {menuItems[key].title}
                                     <MdKeyboardArrowDown className={`ml-2 h-5 transition-transformn ${
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <div className='hidden md:flex items-center space-x-4'>
                     <Link to='/login' className='hover:text-yellow-500 hidden xl:block'>Log in</Link>
                     <Link to='/contactUs' className='hover:text-yellow-500 hidden xl:block'>Contact us</Link>
-                    <Link to='getStarted' className='hover:text-yellow-600 bg-yellow-700 px-4 py-2 rounded-md hover:bg-sky-800 '>Get Started - for free</Link>
+                    <Link to='getStarted' className='hover:text-yellow-600 bg-yellow-700 px-4 py-2 rounded-md hover:bg-cyan-900'>Get Started - for free</Link>
                 </div>
 
                 {/* mobile menu bar*/}
@@ -121,7 +121,7 @@ const Navbar = () => {
                     <div className='px-2 pt-2 pb-3 space-y-1'>
                         {
                             Object.keys(menuItems).map((key) => (
-                                <div className='space-y-2'>
+                                <div className='space-y-2' key={key}>
                                     <button onClick={() => toggleDropdown(key)} className='hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium flex items-center'>
                                         {menuItems[key].title}
                                         <MdKeyboardArrowDown className={`ml-2 h-5 transition-transformn ${
