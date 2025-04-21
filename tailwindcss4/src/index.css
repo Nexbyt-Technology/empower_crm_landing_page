@@ -1,49 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: 192 192 192; /* Silver */
-  --color-box: 255 255 255; /*While */
-  --box-border: 229 231 235;
-  --box-sd: 226 232 240 / 0.5;
-  --heading-1: 23 37 84;
-  --heading-2: 31 41 55;
-  --heading-3: 55 65 81;
+  --color-primary: #080806;
 }
 
-html.dark {
-  --color-bg: 3 7 18; /* deep blue */
-  --color-box: 17 24 39;
-  --box-border: 243 244 246;
-  --box-sd: transparent;
-  --heading-1: 255 255 255;
-  --heading-2: 243 244 246;
-  --heading-3: 209 213 219;
-
-}
-
-@layer utilities{
-
-  .bg-body {
-    background-color: rbg(var(--color-bg));
-  }
-  .bg-box-bg {
-    background-color: rbg(var(--color-box));
-  }
-  .text-heading-1 {
-    color: rbg(var(--heading-1));
-  }
-  .text-heading-2 {
-    color: rbg(var(--heading-2));
-  }
-  .text-heading-3 {
-    color: rbg(var(--heading-3));
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Raleway", sans-serif;
+.primary-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
 }
