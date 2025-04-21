@@ -32,7 +32,7 @@ function Hero() {
                While transforming how your business connects with the world, Empowa CRM unites your team, prospects, customers, and stakeholders, <br className='md:block hidden'/>all in one seamless experience, elevating satisfaction into exponential growth.
                </p >
                <div className='flex sm:flex-row flex-wrap gap-8 shrink-0 '>
-                    <Link to='/start-leading'  className='bg-yellow-700 hover:bg-cyan-900 text-white px-8 py-4 rounded transition-colors duration-200'>Start Leading</Link>
+                    <Link to='/start-leading'  className='bg-yellow-700 hover:bg-cyan-900 text-white px-8 py-4 rounded transition-colors ease-in-out duration-500 transform hover:scale-110'>Start Leading</Link>
                     <Link to='/contact-us' className='flex items-center text-white group hover:text-white/40 px-8 py-4 rounded transition-colors duration-200'>
                         Contact Us <HiArrowRight className='ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200'/>
                      </Link>

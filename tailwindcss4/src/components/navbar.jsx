@@ -100,7 +100,7 @@ const Navbar = () => {
                 <div className='hidden md:flex items-center space-x-4'>
                     <Link to='/login' className='hover:text-yellow-500 hidden xl:block'>Log in</Link>
                     <Link to='/contactUs' className='hover:text-yellow-500 hidden xl:block'>Contact us</Link>
-                    <Link to='getStarted' className='hover:text-yellow-600 bg-yellow-700 px-4 py-2 rounded-md hover:bg-cyan-900'>Get Started - for free</Link>
+                    <Link to='getStarted' className='hover:text-yellow-600 bg-yellow-700 px-4 py-2 rounded-md hover:bg-cyan-900 transition-colors ease-in-out duration-500 transform hover:scale-110'>Get Started - for free</Link>
                 </div>
 
                 {/* mobile menu bar*/}
