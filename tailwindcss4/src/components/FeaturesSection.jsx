@@ -49,7 +49,7 @@ const FeaturesSection = () => {
               features.map((features, index) => (
                 <div key={index} className='flex flex-col text-white border-t border-white/20 pt-8'>
                   <div className='mb-4 text-white'>{features.icon}</div>
-                  <h3 className='text:lg font-medium mb-2' >{features.title}</h3>
+                  <h3 className='text:lg font-medium mb-2 text-white' >{features.title}</h3>
                   <p className='text-gray-500 mb-4 flex-1'>{features.description}</p>
                 </div>
               ))

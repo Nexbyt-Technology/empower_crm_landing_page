@@ -187,7 +187,7 @@ const DesignSection = () => {
 
                                     {/* bottom text and play icon*/}
                                     <div className='flex justify-between absolute  bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent'>
-                                        <Link to='/' className='inline-flex items-center text-white hover:text-gray-300 transition-colors'>{tab.cta.text}
+                                        <Link to='/' className='inline-flex items-center text-yellow-500 hover:text-cyan-600 transition-colors'>{tab.cta.text}
                                         <HiArrowRight className='ml-4'/>
                                         </Link>
                                         <button onClick={togglePlayPause} className='p-2 text-white hover:text-grey-300'>

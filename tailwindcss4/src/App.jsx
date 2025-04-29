@@ -6,6 +6,7 @@ import FeaturesSection from "./components/FeaturesSection"
 import DesignSection from "./components/DesignSection"
 import About from "./components/about"
 import TryNow from "./components/TryNow"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <DesignSection/>
       <About/>
       <TryNow/>
+      <Footer/>
     </>
   )
 }
