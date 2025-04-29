@@ -4,6 +4,8 @@ import Hero from "./components/Hero"
 import CompanyLogo from "./components/CompanyLogo"
 import FeaturesSection from "./components/FeaturesSection"
 import DesignSection from "./components/DesignSection"
+import About from "./components/about"
+import TryNow from "./components/TryNow"
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <CompanyLogo/>
       <FeaturesSection/>
       <DesignSection/>
+      <About/>
+      <TryNow/>
     </>
   )
 }

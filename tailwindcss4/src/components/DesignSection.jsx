@@ -139,7 +139,7 @@ const DesignSection = () => {
                     <div className='space-y-6'>
                         {
                             tabsData.map((tab) => (
-                                <div onClick={() => handleTabClick(tab.id)} className='relative pl-4 cursor-pointer'>
+                                <div key={tab.id} onClick={() => handleTabClick(tab.id)} className='relative pl-4 cursor-pointer'>
                                     {/* progress bar */}
                                     <div className='absolute left-0 top-0 bottom-0 w-1 bg-gray-800'>
                                         {
